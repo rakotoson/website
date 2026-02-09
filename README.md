@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with **Vue.js 3** and **Tailwind CSS**. This project showcases my experience, skills, and projects as a Software Engineer specialized in building scalable systems.
 
+🚀 **Live Demo:** [https://website-five-psi-78.vercel.app/](https://website-five-psi-78.vercel.app/)
+
 ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
