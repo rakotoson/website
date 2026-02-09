@@ -1,5 +1,65 @@
-# Vue 3 + Vite
+# Avotra Niaina Rakotoson - Personal Portfolio 🚀
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A modern, responsive portfolio website built with **Vue.js 3** and **Tailwind CSS**. This project showcases my experience, skills, and projects as a Software Engineer specialized in building scalable systems.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
+## ✨ Features
+
+- **🎨 Modern UI/UX**: Clean, glassmorphism-inspired design with smooth transitions.
+- **🌓 Dark/Light Mode**: Fully supported theme toggle with persistent preference.
+- **📱 Responsive Design**: Optimized for mobile, tablet, and desktop devices.
+- **⚡ Fast Performance**: Powered by Vite for lightning-fast HMR and building.
+- **📨 Contact Modal**: Integrated contact form with validation and animations.
+- **📄 Resume Download**: Easy access to download the CV directly.
+- **🔍 Interactive Sections**:
+  - Experience Timeline with detailed role descriptions.
+  - Project showcase with tech stack tags.
+  - Skill visualization categorized by domain.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Vue.js 3](https://vuejs.org/) (Composition API)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide Vue Next](https://lucide.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/rakotoson/portfolio.git
+   cd portfolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ by [Avotra Niaina Rakotoson](https://github.com/rakotoson)
