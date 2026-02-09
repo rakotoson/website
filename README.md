@@ -56,6 +56,10 @@ A modern, responsive portfolio website built with **Vue.js 3** and **Tailwind CS
    npm run build
    ```
 
+6. **Deploy to Vercel** (Recommended)
+   
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frakotoson%2Fportfolio)
+
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
