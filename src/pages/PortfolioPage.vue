@@ -187,13 +187,13 @@ const downloadResume = () => {
                  </div>
                </div>
                
-               <!-- Backend -->
+               <!-- Frameworks -->
                <div class="skill-category shadow-sm flex flex-col h-full bg-white dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700/50 transition-colors duration-300">
                  <div class="flex items-center gap-2.5 text-slate-500 dark:text-slate-300 text-xs font-medium mb-3 uppercase tracking-wider transition-colors duration-300">
                    <div class="w-6 h-6 rounded-md bg-purple-50 dark:bg-purple-500/20 flex items-center justify-center transition-colors duration-300">
                      <Server class="w-3.5 h-3.5 text-purple-500 dark:text-purple-400" />
                    </div>
-                   <span>Backend</span>
+                   <span>Frameworks</span>
                  </div>
                  <div class="flex flex-wrap gap-2 mt-auto">
                    <span v-for="skill in coreSkills.frameworks" :key="skill" class="skill-pill px-2.5 py-1.5 rounded-lg text-xs text-slate-600 dark:text-slate-300 font-medium bg-slate-100 dark:bg-slate-700/50 transition-colors duration-300">
