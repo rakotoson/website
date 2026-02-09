@@ -37,8 +37,8 @@ A modern, responsive portfolio website built with **Vue.js 3** and **Tailwind CS
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/rakotoson/portfolio.git
-   cd portfolio
+   git clone https://github.com/rakotoson/website.git
+   cd website
    ```
 
 2. **Install dependencies**
