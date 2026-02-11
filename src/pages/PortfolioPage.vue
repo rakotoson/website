@@ -4,7 +4,7 @@ import { Mail, MapPin, Github, Linkedin, Code, Server, Cloud, Briefcase, Graduat
 import { skills, experience, contactInfo, education, projects } from '@/data/portfolio';
 import ContactModal from '@/components/ContactModal.vue';
 
-const activeTab = ref('experience');
+const activeTab = ref('projects');
 const showContactModal = ref(false);
 const isDark = ref(true);
 
@@ -32,9 +32,9 @@ onMounted(() => {
 });
 
 const tabs = [
+  { id: 'projects', label: 'Projects', icon: FolderOpen },
   { id: 'experience', label: 'Experience', icon: Briefcase },
-  { id: 'education', label: 'Education', icon: GraduationCap },
-  { id: 'projects', label: 'Projects', icon: FolderOpen }
+  { id: 'education', label: 'Education', icon: GraduationCap }
 ];
 
 const coreSkills = {
@@ -42,6 +42,10 @@ const coreSkills = {
   frameworks: skills.frameworks,
   databases: skills.databases
 };
+
+const startYear = 2018;
+const currentYear = new Date().getFullYear();
+const yearsOfExperience = currentYear - startYear;
 
 const downloadResume = () => {
   // This will download the resume PDF from the public folder
@@ -101,7 +105,7 @@ const downloadResume = () => {
           <!-- Bio -->
           <div class="mb-6 lg:mb-8 max-w-sm">
             <p class="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed transition-colors duration-300">
-              <span class="text-2xl mr-1">🚀</span> Passionate developer with <span class="text-transparent bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text font-bold">7+ years</span> of experience crafting
+              <span class="text-2xl mr-1">🚀</span> Passionate developer with <span class="text-transparent bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text font-bold">{{ yearsOfExperience }}+ years</span> of experience crafting
             </p>
             <p class="text-slate-500 dark:text-slate-400 text-sm md:text-base leading-relaxed mt-2 transition-colors duration-300">
               <span class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 rounded-full text-blue-600 dark:text-blue-400 text-xs font-medium mr-1 transition-colors duration-300">
@@ -304,7 +308,7 @@ const downloadResume = () => {
                  <p class="text-slate-600 dark:text-slate-400 text-sm lg:text-base mb-4 line-clamp-2 leading-relaxed transition-colors duration-300">{{ project.description }}</p>
                  <div class="flex flex-wrap gap-2">
                    <span 
-                     v-for="tech in project.tech.slice(0, 6)" 
+                     v-for="tech in project.tech" 
                     :key="tech"
                     class="tech-tag px-2.5 py-1 rounded-lg text-xs text-slate-600 dark:text-slate-300 font-medium bg-slate-100 dark:bg-slate-700/50 transition-colors duration-300"
                   >

@@ -1,12 +1,25 @@
 export const skills = {
-  languages: ['JavaScript', 'TypeScript', 'Node.js', 'Ruby', 'PHP', 'Python', 'Dart', 'Bash', 'SQL', 'HTML5', 'CSS3'],
-  frameworks: ['NestJS', 'Ruby on Rails', 'Laravel', 'Angular', 'Ionic', 'React', 'React Native', 'Vue.js'],
+  languages: ['JavaScript', 'TypeScript', 'Node.js', 'Ruby', 'PHP', 'Python', 'Bash', 'SQL', 'HTML5', 'CSS3'],
+  frameworks: ['NestJS', 'Laravel', 'Ruby on Rails', 'Angular', 'Ionic', 'React', 'React Native', 'Vue.js'],
   databases: ['PostgreSQL', 'Supabase', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch', 'SQLite', 'IndexDB'],
   tools: ['Docker', 'Git', 'CI/CD', 'DevOps', 'REST API', 'GraphQL', 'WebSocket'],
   methodologies: ['Agile/Scrum', 'OOP', 'TDD']
 };
 
 export const projects = [
+  {
+    title: 'Accord Knits Yarn Management',
+    role: 'Technical Manager & Fullstack Developer',
+    company: 'Haizaha',
+    description: 'Production tracking and management system for textile operations',
+    highlights: [
+      'Managed complete SDLC from specs to deployment',
+      'Designed UI/UX with Figma',
+      'Migrated Access DB to PostgreSQL',
+      'Built custom filtering system for data visualization'
+    ],
+    tech: ['NestJS', 'TypeScript', 'Angular', 'PostgreSQL', 'AccessDB', 'Shell', 'Python', 'Docker', 'Tailwind', 'Git']
+  },
   {
     title: 'Pertimm Search Engine Platform',
     role: 'Senior Software Engineer',
@@ -18,20 +31,7 @@ export const projects = [
       'Redesigned web interface for search engine visualization',
       'Automated deployment with Bash scripts'
     ],
-    tech: ['Node.js', 'Ruby', 'PHP', 'Redis', 'ElasticSearch', 'MySQL', 'Git']
-  },
-  {
-    title: 'eCommerce Platform',
-    role: 'Lead Developer',
-    company: 'Adopt IT',
-    description: 'High-traffic eCommerce platform serving thousands of customers',
-    highlights: [
-      'Architected backend with NestJS for robust APIs',
-      'Built responsive frontend with Angular & TailwindCSS',
-      'Optimized database schemas for performance',
-      'Implemented comprehensive automated testing'
-    ],
-    tech: ['NestJS', 'Angular', 'PostgreSQL', 'TailwindCSS', 'TypeScript']
+    tech: ['Node.js', 'TypeScript', 'Ruby', 'PHP', 'Redis', 'ElasticSearch', 'MySQL', 'Git']
   },
   {
     title: 'Werenov Repair Tracking',
@@ -44,7 +44,7 @@ export const projects = [
       'Built responsive interfaces with Angular 11',
       'Enhanced existing modules with new features'
     ],
-    tech: ['Node.js', 'Angular', 'MongoDB', 'Bootstrap', 'JavaScript']
+    tech: ['Node.js', 'Angular', 'MongoDB', 'Bootstrap', 'JavaScript', 'Git']
   },
   {
     title: 'XXL Happyness',
@@ -57,21 +57,22 @@ export const projects = [
       'Developed automated background modules',
       'Performed comprehensive functional testing'
     ],
-    tech: ['NestJS', 'React Native', 'MongoDB', 'GraphQL', 'Node.js']
+    tech: ['NestJS', 'React Native', 'MongoDB', 'GraphQL', 'Node.js', 'Git']
   },
   {
-    title: 'Accord Knits Yarn Management',
-    role: 'Technical Manager & Fullstack Developer',
-    company: 'Haizaha',
-    description: 'Production tracking and management system for textile operations',
-    highlights: [
-      'Managed complete SDLC from specs to deployment',
-      'Designed UI/UX with Figma',
-      'Migrated Access DB to PostgreSQL',
-      'Built custom filtering system for data visualization'
-    ],
-    tech: ['NestJS', 'Angular', 'PostgreSQL', 'Python', 'Docker', 'Tailwind']
-  }
+  title: 'Digidom',
+  role: 'Fullstack Developer',
+  company: 'Soku Madagascar',
+  description: 'Register and set up your company easily with Digidom',
+  highlights: [
+    'A prestigious business address in major cities across France',
+    'Efficient mail management for your business',
+    'A responsive, dedicated, and attentive customer support service',
+    'Your contract available within 10 minutes',
+    'A team of legal experts at your disposal'
+  ],
+  tech: ['PHP', 'Laravel', 'React Native', 'MongoDB', 'Bootstrap', 'JavaScript', 'JQuery', 'Git']
+},
 ];
 
 export const experience = [
@@ -88,8 +89,8 @@ export const experience = [
     ]
   },
   {
-    period: 'April 2024 - Novembre 2025',
-    company: 'SERVYIA SRL U',
+    period: 'March 2023 - July 2024',
+    company: 'Ennov IT Ltd',
     role: 'Software Engineer',
     location: 'Madagascar',
     details: [
@@ -100,21 +101,9 @@ export const experience = [
     ]
   },
   {
-    period: 'May 2022 - April 2024',
-    company: 'Adopt IT',
-    role: 'Software Engineer',
-    location: 'Madagascar',
-    details: [
-      'Architected scalable backend APIs using NestJS and TypeScript',
-      'Developed responsive frontends with Angular and TailwindCSS',
-      'Optimized PostgreSQL database schemas for high-traffic eCommerce platform',
-      'Implemented comprehensive test suites and CI/CD pipelines'
-    ]
-  },
-  {
     period: 'February 2022 - May 2022',
     company: 'Katana SAS',
-    role: 'Application Developer Designer',
+    role: 'Full Stack Developer',
     location: 'Madagascar',
     details: [
       'Led complete UI/UX redesign for repair tracking platform',
@@ -136,7 +125,7 @@ export const experience = [
     ]
   },
   {
-    period: 'June 2017 - August 2019',
+    period: 'August 2018 - July 2019',
     company: 'Soku Madagascar',
     role: 'IT Consultant',
     location: 'Madagascar',
