@@ -6,139 +6,105 @@ export const skills = {
   methodologies: ['Agile/Scrum', 'OOP', 'TDD']
 };
 
-export const projects = [
-  {
-    title: 'Accord Knits Yarn Management',
-    role: 'Technical Manager & Fullstack Developer',
-    company: 'Haizaha',
-    description: 'Production tracking and management system for textile operations',
-    highlights: [
-      'Managed complete SDLC from specs to deployment',
-      'Designed UI/UX with Figma',
-      'Migrated Access DB to PostgreSQL',
-      'Built custom filtering system for data visualization'
-    ],
-    tech: ['NestJS', 'TypeScript', 'Angular', 'PostgreSQL', 'AccessDB', 'Shell', 'Python', 'Docker', 'Tailwind', 'Git']
-  },
-  {
-    title: 'Pertimm Search Engine Platform',
-    role: 'Senior Software Engineer',
-    company: 'Ennov IT',
-    description: 'European leader in search engine solutions powering major clients like E.Leclerc and Showroomprivé',
-    highlights: [
-      'Built high-performance Node.js application for distributed indexing',
-      'Led PHP v5→v8 and Ruby v2→v3 migration',
-      'Redesigned web interface for search engine visualization',
-      'Automated deployment with Bash scripts'
-    ],
-    tech: ['Node.js', 'TypeScript', 'Ruby', 'PHP', 'Redis', 'ElasticSearch', 'MySQL', 'Git']
-  },
-  {
-    title: 'Werenov Repair Tracking',
-    role: 'Fullstack Developer',
-    company: 'Katana SAS',
-    description: 'Platform for tracking and managing building repair progress',
-    highlights: [
-      'Led complete UI/UX redesign',
-      'Developed backend services with Node.js',
-      'Built responsive interfaces with Angular 11',
-      'Enhanced existing modules with new features'
-    ],
-    tech: ['Node.js', 'Angular', 'MongoDB', 'Bootstrap', 'JavaScript', 'Git']
-  },
-  {
-    title: 'XXL Happyness',
-    role: 'Fullstack Developer',
-    company: 'Consult & Co Digital',
-    description: 'Employee well-being and quality of work life management platform',
-    highlights: [
-      'Created interactive dashboard for user analytics',
-      'Designed KPIs module for performance tracking',
-      'Developed automated background modules',
-      'Performed comprehensive functional testing'
-    ],
-    tech: ['NestJS', 'React Native', 'MongoDB', 'GraphQL', 'Node.js', 'Git']
-  },
-  {
-  title: 'Digidom',
-  role: 'Fullstack Developer',
-  company: 'Soku Madagascar',
-  description: 'Register and set up your company easily with Digidom',
-  highlights: [
-    'A prestigious business address in major cities across France',
-    'Efficient mail management for your business',
-    'A responsive, dedicated, and attentive customer support service',
-    'Your contract available within 10 minutes',
-    'A team of legal experts at your disposal'
-  ],
-  tech: ['PHP', 'Laravel', 'React Native', 'MongoDB', 'Bootstrap', 'JavaScript', 'JQuery', 'Git']
-},
-];
-
 export const experience = [
   {
     period: 'September 2019 - Present',
     company: 'Haizaha',
-    role: 'Software Engineer',
+    role: 'Software Engineer & Technical Lead',
     location: 'Madagascar',
     details: [
-      'Managing complete SDLC from specifications to deployment',
-      'Designing UI/UX prototypes using Figma',
-      'Migrated legacy Access databases to PostgreSQL',
-      'Building custom data visualization and filtering systems'
-    ]
+      'Led the architecture of Repr.dev, an AI-driven Git contribution analysis tool, reaching 95% analysis accuracy',
+      'Directed the critical migration from Access to PostgreSQL and oversaw ERP development for Accord Knits, optimizing overall production efficiency',
+      'Deployed a hybrid fullstack solution (Angular/Ionic) for field data collection, improving on-site tracking efficiency',
+      'Designed an automated Chrome monitoring extension, reducing AI annotation errors by 40%'
+    ],
+    project: {
+      title: 'Accord Knits Yarn Management',
+      description: 'Production tracking and management system for textile operations',
+      tech: ['NestJS', 'TypeScript', 'Angular', 'PostgreSQL', 'AccessDB', 'Shell', 'Python', 'Docker', 'Tailwind', 'Git']
+    }
   },
   {
-    period: 'March 2023 - July 2024',
-    company: 'Ennov IT Ltd',
-    role: 'Software Engineer',
+    period: 'July 2024 - February 2026',
+    company: 'Servyia SRL U',
+    role: 'Fullstack Software Engineer',
     location: 'Madagascar',
     details: [
-      'Building high-performance Node.js applications for distributed search indexing',
-      'Leading PHP v5→v8 and Ruby v2→v3 migration for legacy systems',
-      'Redesigning web interfaces for search engine visualization platforms',
-      'Automating deployment workflows with custom Bash scripts'
-    ]
+      'Designed the architecture of a global high-traffic e-commerce platform, improving system scalability and performance',
+      'Built a modular frontend with Next.js and Tailwind CSS, significantly increasing user engagement',
+      'Deployed microservices under NestJS and integrated AI agents, automating key processes and cutting operational costs by 25%',
+      'Optimized Supabase queries and GitLab CI/CD pipelines, reducing deployment times by 30%'
+    ],
+    project: {
+      title: 'High-Traffic E-Commerce Platform',
+      description: 'Global e-commerce platform with a modular storefront and AI-assisted operations',
+      tech: ['Next.js', 'NestJS', 'Supabase', 'Tailwind CSS', 'AI Agents', 'GitLab CI/CD', 'Jira']
+    }
+  },
+  {
+    period: 'May 2023 - June 2024',
+    company: 'Ennov IT',
+    role: 'Software Engineer (Consultant)',
+    location: 'Madagascar',
+    details: [
+      'Accelerated search performance via a Node.js API using Worker Threads, handling 100,000+ requests per second',
+      'Automated JSON feed processing with Ruby and Bash, speeding up product indexing by 40%',
+      'Modernized PHP and Ruby stacks to their latest versions, improving overall security and performance by 30%',
+      'Optimized infrastructure with Redis and Elasticsearch, reducing system latency by 50%'
+    ],
+    project: {
+      title: 'Pertimm Search Engine Platform',
+      description: 'European leader in search engine solutions powering major clients like E.Leclerc and Showroomprivé',
+      tech: ['Node.js', 'Ruby on Rails', 'PHP 8', 'Elasticsearch', 'Redis', 'MySQL', 'FluentD', 'Bash']
+    }
   },
   {
     period: 'February 2022 - May 2022',
     company: 'Katana SAS',
-    role: 'Full Stack Developer',
+    role: 'Fullstack Developer',
     location: 'Madagascar',
     details: [
-      'Led complete UI/UX redesign for repair tracking platform',
-      'Developed backend services with Node.js and MongoDB',
-      'Built responsive interfaces using Angular 11 and Bootstrap',
-      'Enhanced existing modules with new feature implementations'
-    ]
+      'Optimized UX/UI with reusable React components, improving page fluidity and load speed',
+      'Built robust REST APIs under Node.js, ensuring more reliable data exchange'
+    ],
+    project: {
+      title: 'Werenov Repair Tracking',
+      description: 'Platform for tracking and managing building repair progress',
+      tech: ['Node.js', 'React', 'MongoDB', 'Bootstrap', 'Git']
+    }
   },
   {
     period: 'November 2020 - July 2021',
     company: 'Consult & Co Digital',
-    role: 'IT Consultant',
+    role: 'Fullstack IT Consultant',
     location: 'Madagascar',
     details: [
-      'Created interactive dashboards for employee analytics',
-      'Designed KPI modules for performance tracking systems',
-      'Developed automated background processing modules',
-      'Performed comprehensive functional and integration testing'
-    ]
+      'Built a cross-platform mobile app with React Native (XXL Happyness), reaching 10,000+ active downloads',
+      'Generated automated KPI dashboards, delivering critical insights that drove a notable performance increase',
+      'Designed high-performance Angular interfaces for fleet management (Octave Telecom), improving overall operational efficiency'
+    ],
+    project: {
+      title: 'XXL Happyness',
+      description: 'Employee well-being and quality of work life management platform',
+      tech: ['NestJS', 'React Native', 'MongoDB', 'GraphQL', 'Node.js', 'Git']
+    }
   },
   {
-    period: 'August 2018 - July 2019',
+    period: 'June 2017 - August 2019',
     company: 'Soku Madagascar',
-    role: 'IT Consultant',
+    role: 'Backend Developer / Consultant',
     location: 'Madagascar',
     details: [
-      'Provided technical consulting for web application development',
-      'Developed custom solutions using PHP and Laravel',
-      'Implemented database design and optimization strategies',
-      'Delivered training sessions on modern development practices'
-    ]
+      'Built the backend engine for Digidom with Laravel and MySQL, handling 5,000+ transactions per month without interruption',
+      'Implemented an automated emailing system, improving customer engagement and interaction rates'
+    ],
+    project: {
+      title: 'Digidom',
+      description: 'Register and set up your company easily with Digidom',
+      tech: ['PHP', 'Laravel', 'React Native', 'MongoDB', 'Bootstrap', 'JavaScript', 'jQuery', 'Git']
+    }
   }
 ];
-
-export const menuItems = ['Home', 'About', 'Skills', 'Projects', 'Experience', 'Contact'];
 
 export const contactInfo = {
   email: 'navotra.rakotoson@gmail.com',
