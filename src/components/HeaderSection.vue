@@ -35,7 +35,7 @@ defineEmits(['get-in-touch']);
     <OfferingsSection />
 
     <p class="text-sm text-slate-500 dark:text-slate-400 mt-6">
-      <span class="font-semibold text-slate-900 dark:text-white">Rate:</span> starting at €150/day — always happy to discuss scope and fit.
+      <span class="font-semibold text-slate-900 dark:text-white">Rate:</span> starting at $150/day — always happy to discuss scope and fit.
     </p>
 
     <ActionButtons @get-in-touch="$emit('get-in-touch')" />
