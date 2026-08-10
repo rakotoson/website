@@ -1,8 +1,8 @@
 export const skills = {
-  languages: ['JavaScript', 'TypeScript', 'Node.js', 'Ruby', 'PHP', 'Python', 'Bash', 'SQL', 'HTML5', 'CSS3'],
-  frameworks: ['NestJS', 'Laravel', 'Ruby on Rails', 'Angular', 'Ionic', 'React', 'React Native', 'Vue.js'],
-  databases: ['PostgreSQL', 'Supabase', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch', 'SQLite', 'IndexDB'],
-  tools: ['Docker', 'Git', 'CI/CD', 'DevOps', 'REST API', 'GraphQL', 'WebSocket'],
+  languages: ['JavaScript', 'TypeScript', 'Node.js', 'PHP', 'Python', 'Bash', 'SQL', 'HTML5', 'CSS3'],
+  frameworks: ['NestJS', 'Express', 'Laravel', 'Ruby on Rails', 'Angular', 'Ionic', 'Next.js', 'React', 'React Native', 'Vue.js', 'Tailwind CSS', 'Shadcn', 'Bootstrap'],
+  databases: ['PostgreSQL', 'Supabase', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch', 'SQLite', 'IndexedDB'],
+  tools: ['Docker', 'Git', 'GitLab', 'GitHub', 'CI/CD', 'Linux', 'REST API', 'GraphQL', 'gRPC', 'WebSocket', 'AI Agents', 'Redash', 'Figma', 'Jira', 'Trello'],
   methodologies: ['Agile/Scrum', 'OOP', 'TDD']
 };
 
@@ -18,11 +18,28 @@ export const experience = [
       'Deployed a hybrid fullstack solution (Angular/Ionic) for field data collection, improving on-site tracking efficiency',
       'Designed an automated Chrome monitoring extension, reducing AI annotation errors by 40%'
     ],
-    project: {
-      title: 'Accord Knits Yarn Management',
-      description: 'Production tracking and management system for textile operations',
-      tech: ['NestJS', 'TypeScript', 'Angular', 'PostgreSQL', 'AccessDB', 'Shell', 'Python', 'Docker', 'Tailwind', 'Git']
-    }
+    projects: [
+      {
+        title: 'Accord Knits Yarn Management',
+        description: 'Production tracking and management system for textile operations',
+        tech: ['NestJS', 'TypeScript', 'Angular', 'PostgreSQL', 'AccessDB', 'Shell', 'Python', 'Docker', 'Tailwind', 'Git']
+      },
+      {
+        title: 'Repr.dev',
+        description: 'AI-powered platform for analyzing Git contribution history and developer activity, reaching 95% analysis accuracy',
+        tech: ['Next.js', 'Node.js', 'Python', 'NumPy', 'SQLAlchemy']
+      },
+      {
+        title: 'AD2M',
+        description: 'Hybrid fullstack solution for regional field data collection and on-site tracking',
+        tech: ['Angular', 'Ionic', 'Docker']
+      },
+      {
+        title: 'Chrome Extension Monitoring',
+        description: 'Automated Chrome extension for monitoring AI annotation quality, cutting errors by 40%',
+        tech: ['JavaScript', 'Chrome Extension API']
+      }
+    ]
   },
   {
     period: 'July 2024 - February 2026',
@@ -35,11 +52,13 @@ export const experience = [
       'Deployed microservices under NestJS and integrated AI agents, automating key processes and cutting operational costs by 25%',
       'Optimized Supabase queries and GitLab CI/CD pipelines, reducing deployment times by 30%'
     ],
-    project: {
-      title: 'High-Traffic E-Commerce Platform',
-      description: 'Global e-commerce platform with a modular storefront and AI-assisted operations',
-      tech: ['Next.js', 'NestJS', 'Supabase', 'Tailwind CSS', 'AI Agents', 'GitLab CI/CD', 'Jira']
-    }
+    projects: [
+      {
+        title: 'High-Traffic E-Commerce Platform',
+        description: 'Global e-commerce platform with a modular storefront and AI-assisted operations',
+        tech: ['Next.js', 'NestJS', 'Supabase', 'Tailwind CSS', 'AI Agents', 'GitLab CI/CD', 'Jira']
+      }
+    ]
   },
   {
     period: 'May 2023 - June 2024',
@@ -52,11 +71,13 @@ export const experience = [
       'Modernized PHP and Ruby stacks to their latest versions, improving overall security and performance by 30%',
       'Optimized infrastructure with Redis and Elasticsearch, reducing system latency by 50%'
     ],
-    project: {
-      title: 'Pertimm Search Engine Platform',
-      description: 'European leader in search engine solutions powering major clients like E.Leclerc and Showroomprivé',
-      tech: ['Node.js', 'Ruby on Rails', 'PHP 8', 'Elasticsearch', 'Redis', 'MySQL', 'FluentD', 'Bash']
-    }
+    projects: [
+      {
+        title: 'Pertimm Search Engine Platform',
+        description: 'European leader in search engine solutions powering major clients like E.Leclerc and Showroomprivé',
+        tech: ['Node.js', 'Ruby on Rails', 'PHP 8', 'Elasticsearch', 'Redis', 'MySQL', 'FluentD', 'Bash']
+      }
+    ]
   },
   {
     period: 'February 2022 - May 2022',
@@ -67,11 +88,13 @@ export const experience = [
       'Optimized UX/UI with reusable React components, improving page fluidity and load speed',
       'Built robust REST APIs under Node.js, ensuring more reliable data exchange'
     ],
-    project: {
-      title: 'Werenov Repair Tracking',
-      description: 'Platform for tracking and managing building repair progress',
-      tech: ['Node.js', 'React', 'MongoDB', 'Bootstrap', 'Git']
-    }
+    projects: [
+      {
+        title: 'Werenov Repair Tracking',
+        description: 'Platform for tracking and managing building repair progress',
+        tech: ['Node.js', 'React', 'MongoDB', 'Bootstrap', 'Git']
+      }
+    ]
   },
   {
     period: 'November 2020 - July 2021',
@@ -83,11 +106,18 @@ export const experience = [
       'Generated automated KPI dashboards, delivering critical insights that drove a notable performance increase',
       'Designed high-performance Angular interfaces for fleet management (Octave Telecom), improving overall operational efficiency'
     ],
-    project: {
-      title: 'XXL Happyness',
-      description: 'Employee well-being and quality of work life management platform',
-      tech: ['NestJS', 'React Native', 'MongoDB', 'GraphQL', 'Node.js', 'Git']
-    }
+    projects: [
+      {
+        title: 'XXL Happyness',
+        description: 'Employee well-being and quality of work life management platform',
+        tech: ['NestJS', 'React Native', 'MongoDB', 'GraphQL', 'Node.js', 'Git']
+      },
+      {
+        title: 'Octave Telecom',
+        description: 'Fleet management platform with high-performance interfaces for operational tracking',
+        tech: ['Angular', 'Node.js', 'NestJS', 'MongoDB', 'GraphQL']
+      }
+    ]
   },
   {
     period: 'June 2017 - August 2019',
@@ -98,11 +128,13 @@ export const experience = [
       'Built the backend engine for Digidom with Laravel and MySQL, handling 5,000+ transactions per month without interruption',
       'Implemented an automated emailing system, improving customer engagement and interaction rates'
     ],
-    project: {
-      title: 'Digidom',
-      description: 'Register and set up your company easily with Digidom',
-      tech: ['PHP', 'Laravel', 'React Native', 'MongoDB', 'Bootstrap', 'JavaScript', 'jQuery', 'Git']
-    }
+    projects: [
+      {
+        title: 'Digidom',
+        description: 'Register and set up your company easily with Digidom',
+        tech: ['PHP', 'Laravel', 'React Native', 'MongoDB', 'Bootstrap', 'JavaScript', 'jQuery', 'Git']
+      }
+    ]
   }
 ];
 
@@ -110,7 +142,7 @@ export const contactInfo = {
   email: 'navotra.rakotoson@gmail.com',
   phone: '+261 34 93 543 89',
   location: 'Antananarivo, Madagascar',
-  languages: 'English, French, Malagasy'
+  languages: 'English, French'
 };
 
 export const education = [
