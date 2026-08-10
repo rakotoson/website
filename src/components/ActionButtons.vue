@@ -1,6 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
-import { GithubIcon, LinkedinIcon, Download, MessageCircle } from 'lucide-vue-next';
+import { GithubIcon, LinkedinIcon, Download, MessageCircle, Handshake } from 'lucide-vue-next';
 
 const { t } = useI18n();
 
@@ -27,8 +27,9 @@ const downloadResume = () => {
   <div class="flex flex-wrap items-center gap-3">
     <button
       @click="$emit('get-in-touch')"
-      class="btn-invert px-5 py-2.5 text-sm font-semibold bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-slate-200 cursor-pointer"
+      class="btn-invert flex items-center gap-2 px-5 py-2.5 text-sm font-semibold bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-slate-200 cursor-pointer"
     >
+      <Handshake class="w-4 h-4" />
       {{ t('actions.getInTouch') }}
     </button>
     <button
