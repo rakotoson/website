@@ -57,7 +57,7 @@ export default {
     name: 'Your Name',
     namePlaceholder: 'John Doe',
     email: 'Your Email',
-    emailPlaceholder: 'john@example.com',
+    emailPlaceholder: "john{'@'}example.com",
     subject: 'Subject',
     subjectPlaceholder: 'Project Inquiry',
     message: 'Message',
