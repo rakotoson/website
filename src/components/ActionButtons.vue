@@ -1,7 +1,16 @@
 <script setup>
-import { GithubIcon, LinkedinIcon, Download } from 'lucide-vue-next';
+import { GithubIcon, LinkedinIcon, Download, MessageCircle } from 'lucide-vue-next';
+
+const props = defineProps({
+  contactInfo: {
+    type: Object,
+    required: true
+  }
+});
 
 defineEmits(['get-in-touch']);
+
+const whatsappLink = `https://wa.me/${props.contactInfo.phone.replace(/\D/g, '')}`;
 
 const downloadResume = () => {
   const link = document.createElement('a');
@@ -26,6 +35,15 @@ const downloadResume = () => {
       <Download class="w-4 h-4" />
       Resume
     </button>
+    <a
+      :href="whatsappLink"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      class="btn-invert w-10 h-10 flex items-center justify-center border border-slate-300 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white"
+    >
+      <MessageCircle class="w-4 h-4" />
+    </a>
     <a
       href="https://github.com/rakotoson"
       target="_blank"

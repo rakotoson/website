@@ -38,6 +38,6 @@ defineEmits(['get-in-touch']);
       <span class="font-semibold text-slate-900 dark:text-white">Rate:</span> starting at $150/day — always happy to discuss scope and fit.
     </p>
 
-    <ActionButtons @get-in-touch="$emit('get-in-touch')" />
+    <ActionButtons :contact-info="contactInfo" @get-in-touch="$emit('get-in-touch')" />
   </header>
 </template>

@@ -23,7 +23,9 @@ const links = [
 <template>
   <nav class="fixed top-0 inset-x-0 z-50 bg-white/90 dark:bg-black/90 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
     <div class="max-w-5xl mx-auto px-6 sm:px-8 h-14 flex items-center justify-between gap-4">
-      <router-link to="/" class="font-display font-bold text-sm shrink-0">AR</router-link>
+      <router-link to="/" class="font-display font-bold text-sm shrink-0">
+        avotra<span class="align-super text-[10px]">&reg;</span>
+      </router-link>
 
       <div class="flex items-center gap-5 overflow-x-auto scrollbar-hide text-sm text-slate-600 dark:text-slate-400">
         <router-link
