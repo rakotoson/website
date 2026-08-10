@@ -20,7 +20,7 @@ body {
 
 .section-heading {
   font-family: 'Source Serif 4', Georgia, serif;
-  @apply text-xs font-bold uppercase tracking-[0.2em] text-slate-900 dark:text-white border-b border-slate-900 dark:border-white pb-2 mb-6;
+  @apply text-base sm:text-lg font-bold uppercase tracking-[0.2em] text-slate-900 dark:text-white border-b border-slate-900 dark:border-white pb-2 mb-6;
 }
 
 /* ============================================

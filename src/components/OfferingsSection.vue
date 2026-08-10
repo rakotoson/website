@@ -12,7 +12,7 @@ const offerings = [
 </script>
 
 <template>
-  <div class="grid sm:grid-cols-3 gap-4 mt-8">
+  <div class="grid sm:grid-cols-3 gap-4 sm:gap-5">
     <div
       v-for="offering in offerings"
       :key="offering.key"

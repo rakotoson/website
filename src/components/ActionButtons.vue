@@ -24,7 +24,7 @@ const downloadResume = () => {
 </script>
 
 <template>
-  <div class="flex flex-wrap items-center gap-3 mt-8">
+  <div class="flex flex-wrap items-center gap-3">
     <button
       @click="$emit('get-in-touch')"
       class="btn-invert px-5 py-2.5 text-sm font-semibold bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-slate-200 cursor-pointer"

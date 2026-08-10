@@ -21,13 +21,13 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <header class="min-h-screen flex flex-col gap-5">
-    <h1 class="font-display text-4xl sm:text-5xl font-bold tracking-tight">Avotra Niaina Rakotoson</h1>
-    <p class="text-sm sm:text-base font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400 mt-3">
+  <header class="min-h-screen flex flex-col gap-6 sm:gap-6">
+    <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight break-words">Avotra Niaina Rakotoson</h1>
+    <p class="text-sm sm:text-base font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
       {{ t('header.title') }}
     </p>
 
-    <p class="text-slate-600 dark:text-slate-300 leading-relaxed mt-6 max-w-2xl">
+    <p class="text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
       {{ t('header.bio', { years: yearsOfExperience }) }}
     </p>
 
@@ -35,7 +35,7 @@ const { t } = useI18n();
 
     <OfferingsSection />
 
-    <p class="text-sm text-slate-500 dark:text-slate-400 mt-6">
+    <p class="text-sm text-slate-500 dark:text-slate-400">
       <span class="font-semibold text-slate-900 dark:text-white">{{ t('header.rate') }}</span> {{ t('header.rateText') }}
     </p>
 
