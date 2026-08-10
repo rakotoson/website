@@ -28,7 +28,7 @@ defineProps({
             :key="detailIndex"
             class="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
           >
-            <span class="text-slate-400 dark:text-slate-600 mt-0.5">&mdash;</span>
+            <span class="text-slate-400 dark:text-slate-600 mt-0.5">&bull;</span>
             <span>{{ detail }}</span>
           </li>
         </ul>
