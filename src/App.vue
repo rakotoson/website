@@ -32,7 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-white dark:bg-black text-slate-900 dark:text-white transition-colors duration-300">
+  <div class="min-h-screen text-slate-900 dark:text-white transition-colors duration-300">
     <NavBar :is-dark="isDark" @toggle-theme="toggleTheme" />
     <router-view />
   </div>

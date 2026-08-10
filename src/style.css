@@ -2,6 +2,11 @@
 @import "tailwindcss";
 @variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-white: #F5F5F5;
+  --color-black: #171717;
+}
+
 * {
   font-family: 'Inter', sans-serif;
 }
@@ -12,6 +17,16 @@ html {
 
 body {
   @apply bg-white dark:bg-black transition-colors duration-300;
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.018) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.018) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.dark body {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
 }
 
 .font-display {

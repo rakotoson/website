@@ -16,7 +16,7 @@ const offerings = [
     <div
       v-for="offering in offerings"
       :key="offering.key"
-      class="border border-slate-200 dark:border-slate-800 p-5"
+      class="bg-white dark:bg-black shadow-sm hover:shadow-md transition-shadow duration-200 p-5"
     >
       <component :is="offering.icon" class="w-5 h-5 text-slate-400 dark:text-slate-500 mb-3" />
       <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-1.5">{{ t(`offerings.${offering.key}.title`) }}</h3>
