@@ -39,6 +39,18 @@ body {
 }
 
 /* ============================================
+   HIDDEN SCROLLBAR (horizontal nav on mobile)
+   ============================================ */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================
    MODAL TRANSITIONS
    ============================================ */
 .modal-enter-active,

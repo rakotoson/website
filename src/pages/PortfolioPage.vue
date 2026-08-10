@@ -1,6 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import { Sun, Moon } from 'lucide-vue-next';
+import { ref } from 'vue';
 import { skills, experience, contactInfo, education } from '@/data/portfolio';
 import ContactModal from '@/components/ContactModal.vue';
 import HeaderSection from '@/components/HeaderSection.vue';
@@ -16,29 +15,6 @@ const additionalProjects = experience.flatMap((exp) =>
 const projects = [...primaryProjects, ...additionalProjects];
 
 const showContactModal = ref(false);
-const isDark = ref(true);
-
-const toggleTheme = () => {
-  isDark.value = !isDark.value;
-  if (isDark.value) {
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
-  }
-};
-
-onMounted(() => {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    isDark.value = true;
-    document.documentElement.classList.add('dark');
-  } else {
-    isDark.value = false;
-    document.documentElement.classList.remove('dark');
-  }
-});
 
 const startYear = 2017;
 const currentYear = new Date().getFullYear();
@@ -46,18 +22,7 @@ const yearsOfExperience = currentYear - startYear;
 </script>
 
 <template>
-  <div class="min-h-screen bg-white dark:bg-black text-slate-900 dark:text-white transition-colors duration-300">
-    <!-- Theme Toggle -->
-    <button
-      @click="toggleTheme"
-      class="fixed top-5 right-5 z-50 w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white transition-colors duration-200"
-      :title="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
-      :aria-label="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
-    >
-      <Sun v-if="isDark" class="w-4 h-4" />
-      <Moon v-else class="w-4 h-4" />
-    </button>
-
+  <div>
     <div class="max-w-5xl mx-auto px-6 sm:px-8 py-16 sm:py-24">
       <!-- Header -->
       <HeaderSection
@@ -67,22 +32,22 @@ const yearsOfExperience = currentYear - startYear;
       />
 
       <div class="space-y-16">
-        <section>
+        <section id="skills" class="scroll-mt-20">
           <h2 class="section-heading">Skills</h2>
           <SkillsSection :skills="skills" />
         </section>
 
-        <section>
+        <section id="experience" class="scroll-mt-20">
           <h2 class="section-heading">Experience</h2>
           <ExperienceSection :items="experience" />
         </section>
 
-        <section>
+        <section id="projects" class="scroll-mt-20">
           <h2 class="section-heading">Projects</h2>
           <ProjectsSection :items="projects" />
         </section>
 
-        <section>
+        <section id="education" class="scroll-mt-20">
           <h2 class="section-heading">Education</h2>
           <EducationSection :items="education" />
         </section>
@@ -93,8 +58,8 @@ const yearsOfExperience = currentYear - startYear;
         &copy; {{ new Date().getFullYear() }} Avotra Niaina Rakotoson
       </footer>
     </div>
-  </div>
 
-  <!-- Contact Modal Component -->
-  <ContactModal :show="showContactModal" @close="showContactModal = false" />
+    <!-- Contact Modal Component -->
+    <ContactModal :show="showContactModal" @close="showContactModal = false" />
+  </div>
 </template>

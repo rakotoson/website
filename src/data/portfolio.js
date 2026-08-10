@@ -141,7 +141,7 @@ export const experience = [
 export const contactInfo = {
   email: 'navotra.rakotoson@gmail.com',
   phone: '+261 34 93 543 89',
-  location: 'Antananarivo, Madagascar',
+  location: 'Madagascar',
   languages: 'English, French'
 };
 
