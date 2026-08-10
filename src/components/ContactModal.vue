@@ -1,7 +1,8 @@
 <script setup>
-import { reactive } from 'vue';
+import { reactive, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import { Send, X, MessageCircle } from 'lucide-vue-next';
-import { contactInfo } from '@/data/portfolio';
+import { contactInfo as contactInfoData } from '@/data/portfolio';
 
 const props = defineProps({
   show: {
@@ -12,6 +13,9 @@ const props = defineProps({
 
 const emit = defineEmits(['close']);
 
+const { t, locale } = useI18n();
+const contactInfo = computed(() => contactInfoData[locale.value]);
+
 const contactForm = reactive({
   name: '',
   email: '',
@@ -20,7 +24,7 @@ const contactForm = reactive({
 });
 
 const handleSubmit = () => {
-  const mailtoLink = `mailto:${contactInfo.email}?subject=${encodeURIComponent(contactForm.subject)}&body=${encodeURIComponent(`From: ${contactForm.name} (${contactForm.email})\n\n${contactForm.message}`)}`;
+  const mailtoLink = `mailto:${contactInfo.value.email}?subject=${encodeURIComponent(contactForm.subject)}&body=${encodeURIComponent(`From: ${contactForm.name} (${contactForm.email})\n\n${contactForm.message}`)}`;
   window.open(mailtoLink);
   emit('close');
   contactForm.name = '';
@@ -54,8 +58,8 @@ const closeModal = () => {
                 <MessageCircle class="w-5 h-5 text-slate-900 dark:text-white" />
               </div>
               <div>
-                <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white transition-colors duration-300">Get In Touch</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-xs transition-colors duration-300">I'd love to hear from you!</p>
+                <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white transition-colors duration-300">{{ t('contactModal.title') }}</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-xs transition-colors duration-300">{{ t('contactModal.subtitle') }}</p>
               </div>
             </div>
             <button
@@ -70,45 +74,45 @@ const closeModal = () => {
           <form @submit.prevent="handleSubmit" class="p-6 space-y-4">
             <div class="grid grid-cols-2 gap-4">
               <div>
-                <label class="block text-slate-600 dark:text-slate-400 text-xs font-medium mb-1.5 transition-colors duration-300">Your Name</label>
+                <label class="block text-slate-600 dark:text-slate-400 text-xs font-medium mb-1.5 transition-colors duration-300">{{ t('contactModal.name') }}</label>
                 <input
                   v-model="contactForm.name"
                   type="text"
                   required
-                  placeholder="John Doe"
+                  :placeholder="t('contactModal.namePlaceholder')"
                   class="w-full px-4 py-2.5 bg-transparent border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white text-sm placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-slate-900 dark:focus:border-white transition-all duration-300"
                 />
               </div>
               <div>
-                <label class="block text-slate-600 dark:text-slate-400 text-xs font-medium mb-1.5 transition-colors duration-300">Your Email</label>
+                <label class="block text-slate-600 dark:text-slate-400 text-xs font-medium mb-1.5 transition-colors duration-300">{{ t('contactModal.email') }}</label>
                 <input
                   v-model="contactForm.email"
                   type="email"
                   required
-                  placeholder="john@example.com"
+                  :placeholder="t('contactModal.emailPlaceholder')"
                   class="w-full px-4 py-2.5 bg-transparent border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white text-sm placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-slate-900 dark:focus:border-white transition-all duration-300"
                 />
               </div>
             </div>
 
             <div>
-              <label class="block text-slate-600 dark:text-slate-400 text-xs font-medium mb-1.5 transition-colors duration-300">Subject</label>
+              <label class="block text-slate-600 dark:text-slate-400 text-xs font-medium mb-1.5 transition-colors duration-300">{{ t('contactModal.subject') }}</label>
               <input
                 v-model="contactForm.subject"
                 type="text"
                 required
-                placeholder="Project Inquiry"
+                :placeholder="t('contactModal.subjectPlaceholder')"
                 class="w-full px-4 py-2.5 bg-transparent border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white text-sm placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-slate-900 dark:focus:border-white transition-all duration-300"
               />
             </div>
 
             <div>
-              <label class="block text-slate-600 dark:text-slate-400 text-xs font-medium mb-1.5 transition-colors duration-300">Message</label>
+              <label class="block text-slate-600 dark:text-slate-400 text-xs font-medium mb-1.5 transition-colors duration-300">{{ t('contactModal.message') }}</label>
               <textarea
                 v-model="contactForm.message"
                 required
                 rows="4"
-                placeholder="Tell me about your project..."
+                :placeholder="t('contactModal.messagePlaceholder')"
                 class="w-full px-4 py-2.5 bg-transparent border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white text-sm placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-slate-900 dark:focus:border-white transition-all resize-none duration-300"
               ></textarea>
             </div>
@@ -118,7 +122,7 @@ const closeModal = () => {
               class="btn-invert w-full flex items-center justify-center gap-2 px-6 py-3 bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-slate-200 font-semibold cursor-pointer"
             >
               <Send class="w-4 h-4" />
-              <span>Send Message</span>
+              <span>{{ t('contactModal.send') }}</span>
             </button>
           </form>
         </div>

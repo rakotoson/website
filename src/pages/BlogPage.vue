@@ -1,13 +1,18 @@
 <script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import { ArrowRight } from 'lucide-vue-next';
-import { posts } from '@/data/blog';
+import { posts as postsData } from '@/data/blog';
+
+const { t, locale } = useI18n();
+const posts = computed(() => postsData[locale.value]);
 </script>
 
 <template>
   <div class="max-w-3xl mx-auto px-6 sm:px-8 pt-32 sm:pt-40 pb-16 sm:pb-24 min-h-screen">
-    <h1 class="font-display text-4xl sm:text-5xl font-bold tracking-tight">Blog</h1>
+    <h1 class="font-display text-4xl sm:text-5xl font-bold tracking-tight">{{ t('blog.heading') }}</h1>
     <p class="text-slate-600 dark:text-slate-300 leading-relaxed mt-6 max-w-xl">
-      Long-form writing on system architecture, AI-driven tooling, and lessons from shipping production software.
+      {{ t('blog.intro') }}
     </p>
 
     <div class="space-y-4 mt-10">
@@ -31,7 +36,7 @@ import { posts } from '@/data/blog';
           :to="`/blog/${post.slug}`"
           class="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-900 dark:text-white hover:gap-2.5 transition-all"
         >
-          Read More
+          {{ t('blog.readMore') }}
           <ArrowRight class="w-4 h-4" />
         </router-link>
       </article>

@@ -1,4 +1,6 @@
 <script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import { Sun, Moon } from 'lucide-vue-next';
 
 defineProps({
@@ -10,14 +12,21 @@ defineProps({
 
 defineEmits(['toggle-theme']);
 
-const links = [
-  { label: 'Home', to: { path: '/' } },
-  { label: 'Skills', to: { path: '/', hash: '#skills' } },
-  { label: 'Experience', to: { path: '/', hash: '#experience' } },
-  { label: 'Projects', to: { path: '/', hash: '#projects' } },
-  { label: 'Education', to: { path: '/', hash: '#education' } },
-  { label: 'Blog', to: { path: '/blog' } }
-];
+const { t, locale } = useI18n();
+
+const links = computed(() => [
+  { label: t('nav.home'), to: { path: '/' } },
+  { label: t('nav.experience'), to: { path: '/', hash: '#experience' } },
+  { label: t('nav.projects'), to: { path: '/', hash: '#projects' } },
+  { label: t('nav.skills'), to: { path: '/', hash: '#skills' } },
+  { label: t('nav.education'), to: { path: '/', hash: '#education' } },
+  { label: t('nav.blog'), to: { path: '/blog' } }
+]);
+
+const setLocale = (value) => {
+  locale.value = value;
+  localStorage.setItem('locale', value);
+};
 </script>
 
 <template>
@@ -38,15 +47,38 @@ const links = [
         </router-link>
       </div>
 
-      <button
-        @click="$emit('toggle-theme')"
-        class="shrink-0 w-9 h-9 flex items-center justify-center rounded-full border border-slate-300 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white transition-colors duration-200"
-        :title="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
-        :aria-label="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
-      >
-        <Sun v-if="isDark" class="w-4 h-4" />
-        <Moon v-else class="w-4 h-4" />
-      </button>
+      <div class="flex items-center gap-2 shrink-0">
+        <div class="flex items-center rounded-full border border-slate-300 dark:border-slate-700 p-0.5 text-xs font-semibold">
+          <button
+            @click="setLocale('en')"
+            class="px-2.5 py-1 rounded-full transition-colors duration-200 cursor-pointer"
+            :class="locale === 'en' ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'"
+            :aria-pressed="locale === 'en'"
+            aria-label="English"
+          >
+            EN
+          </button>
+          <button
+            @click="setLocale('fr')"
+            class="px-2.5 py-1 rounded-full transition-colors duration-200 cursor-pointer"
+            :class="locale === 'fr' ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'"
+            :aria-pressed="locale === 'fr'"
+            aria-label="Français"
+          >
+            FR
+          </button>
+        </div>
+
+        <button
+          @click="$emit('toggle-theme')"
+          class="w-9 h-9 flex items-center justify-center rounded-full border border-slate-300 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white transition-colors duration-200 cursor-pointer"
+          :title="isDark ? t('theme.toLight') : t('theme.toDark')"
+          :aria-label="isDark ? t('theme.toLight') : t('theme.toDark')"
+        >
+          <Sun v-if="isDark" class="w-4 h-4" />
+          <Moon v-else class="w-4 h-4" />
+        </button>
+      </div>
     </div>
   </nav>
 </template>

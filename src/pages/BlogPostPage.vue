@@ -1,11 +1,13 @@
 <script setup>
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
+import { useI18n } from 'vue-i18n';
 import { ArrowLeft } from 'lucide-vue-next';
-import { posts } from '@/data/blog';
+import { posts as postsData } from '@/data/blog';
 
 const route = useRoute();
-const post = computed(() => posts.find((p) => p.slug === route.params.slug));
+const { t, locale } = useI18n();
+const post = computed(() => postsData[locale.value].find((p) => p.slug === route.params.slug));
 </script>
 
 <template>
@@ -15,7 +17,7 @@ const post = computed(() => posts.find((p) => p.slug === route.params.slug));
       class="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
     >
       <ArrowLeft class="w-4 h-4" />
-      Back to Blog
+      {{ t('blog.backToBlog') }}
     </router-link>
 
     <article v-if="post" class="mt-10">
@@ -55,7 +57,7 @@ const post = computed(() => posts.find((p) => p.slug === route.params.slug));
     </article>
 
     <div v-else class="mt-10">
-      <p class="text-slate-600 dark:text-slate-300">This post doesn't exist.</p>
+      <p class="text-slate-600 dark:text-slate-300">{{ t('blog.notFound') }}</p>
     </div>
   </div>
 </template>

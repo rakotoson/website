@@ -1,5 +1,8 @@
 <script setup>
 import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const props = defineProps({
   items: {
@@ -43,7 +46,7 @@ const visibleItems = computed(() => (showAll.value ? props.items : props.items.s
       @click="showAll = !showAll"
       class="btn-invert mt-6 px-5 py-2.5 text-sm font-semibold border border-slate-900 dark:border-white hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 cursor-pointer"
     >
-      {{ showAll ? 'Show Less' : `Show More (${items.length - VISIBLE_COUNT})` }}
+      {{ showAll ? t('projectsSection.showLess') : t('projectsSection.showMore', { count: items.length - VISIBLE_COUNT }) }}
     </button>
   </div>
 </template>

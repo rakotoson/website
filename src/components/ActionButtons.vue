@@ -1,5 +1,8 @@
 <script setup>
+import { useI18n } from 'vue-i18n';
 import { GithubIcon, LinkedinIcon, Download, MessageCircle } from 'lucide-vue-next';
+
+const { t } = useI18n();
 
 const props = defineProps({
   contactInfo: {
@@ -26,20 +29,20 @@ const downloadResume = () => {
       @click="$emit('get-in-touch')"
       class="btn-invert px-5 py-2.5 text-sm font-semibold bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-slate-200 cursor-pointer"
     >
-      Get In Touch
+      {{ t('actions.getInTouch') }}
     </button>
     <button
       @click="downloadResume"
       class="btn-invert flex items-center gap-2 px-5 py-2.5 text-sm font-semibold border border-slate-900 dark:border-white hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 cursor-pointer"
     >
       <Download class="w-4 h-4" />
-      Resume
+      {{ t('actions.resume') }}
     </button>
     <a
       :href="whatsappLink"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
+      :aria-label="t('actions.chatWhatsapp')"
       class="btn-invert w-10 h-10 flex items-center justify-center border border-slate-300 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white"
     >
       <MessageCircle class="w-4 h-4" />
@@ -48,7 +51,7 @@ const downloadResume = () => {
       href="https://github.com/rakotoson"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="GitHub profile"
+      :aria-label="t('actions.github')"
       class="btn-invert w-10 h-10 flex items-center justify-center border border-slate-300 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white"
     >
       <GithubIcon class="w-4 h-4" />
@@ -57,7 +60,7 @@ const downloadResume = () => {
       href="https://www.linkedin.com/in/avotra-niaina-rakotoson-763a52165/"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="LinkedIn profile"
+      :aria-label="t('actions.linkedin')"
       class="btn-invert w-10 h-10 flex items-center justify-center border border-slate-300 dark:border-slate-700 hover:border-slate-900 dark:hover:border-white"
     >
       <LinkedinIcon class="w-4 h-4" />

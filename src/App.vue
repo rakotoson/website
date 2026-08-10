@@ -1,6 +1,10 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, watch } from 'vue';
+import { useI18n } from 'vue-i18n';
 import NavBar from '@/components/NavBar.vue';
+
+const { locale } = useI18n();
+watch(locale, (value) => { document.documentElement.lang = value; }, { immediate: true });
 
 const isDark = ref(true);
 
