@@ -9,7 +9,7 @@ export default {
   },
   header: {
     title: 'Senior Software Engineer',
-    bio: 'With {years}+ years of experience designing scalable, high-traffic systems. Search APIs handling 100,000+ requests per second, AI solutions achieving 95% accuracy, and platforms used by thousands of users: I turn complex challenges into robust, high-performance, and scalable architectures. Core expertise: Node.js, NestJS, Vue.js, and Angular.',
+    bio: 'With {years}+ years of experience designing scalable, high-traffic systems. Search APIs handling 100,000+ requests per second, AI solutions achieving 95% accuracy, and platforms used by thousands of users: I turn complex challenges into robust, high-performance, and scalable architectures. Core expertise: Node.js, NestJS, TypeScript, React and Angular.',
     rate: 'Rate:',
     rateText: 'starting at $250/day — always happy to discuss scope and fit.'
   },
