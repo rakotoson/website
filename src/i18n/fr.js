@@ -9,22 +9,22 @@ export default {
   },
   header: {
     title: 'Senior Software Engineer',
-    bio: "Senior Software Engineer avec {years}+ ans d\'expérience dans la conception de systèmes scalables et à fort trafic. API de recherche à 100 000+ requêtes/seconde, solutions IA à 95 % de précision, plateformes utilisées par des milliers d’utilisateurs : je transforme des problématiques complexes en architectures robustes, performantes et évolutives. Expertise principale : Node.js, NestJS, Vue.js et Angular.",
+    bio: "Senior Software Engineer avec {years}+ ans d\'expérience dans la conception de systèmes scalables et à fort trafic. API de recherche à 100 000+ requêtes/seconde, solutions IA à 95 % de précision, plateformes utilisées par des milliers d\'utilisateurs : je transforme des problématiques complexes en architectures robustes, performantes et évolutives. Expertise principale : Node.js, NestJS, Vue.js et Angular.",
     rate: 'Tarif :',
     rateText: 'à partir de 200€/jour — toujours ouvert à discuter du périmètre et de l\'adéquation.'
   },
   offerings: {
     architecture: {
       title: 'Architecture Scalable',
-      description: "Conception de systèmes backend et d'API qui tiennent sous une charge de production réelle — pensés pour évoluer avec l'activité, pas contre elle."
+      description: "Conception d\'architectures backend et d\'API robustes, performantes et capables de passer à l\'échelle. Des systèmes pensés dès le départ pour absorber la croissance, les pics de charge et l\'évolution des besoins métier."
     },
     fullstack: {
       title: 'Livraison Fullstack',
-      description: 'Une prise en charge de bout en bout, des maquettes Figma et migrations de base de données jusqu\'à la mise en production — sans transmission ni zone d\'ombre.'
+      description: 'De la conception à la production, je transforme les besoins métier en solutions concrètes et production-ready — de l\'architecture frontend et backend aux bases de données, à l\'infrastructure et au déploiement. Une maîtrise de bout en bout, pensée pour livrer des systèmes robustes et évolutifs.'
     },
     automation: {
-      title: "Automatisation par l'IA",
-      description: "Remplacement des tâches manuelles et répétitives par de l'automatisation et des agents IA, là où ils font vraiment gagner du temps et réduisent les erreurs."
+      title: "IA & Automatisation",
+      description: "Conception de workflows automatisés et d\'agents IA capables d\'exécuter des tâches complexes, de réduire les opérations manuelles et d\'améliorer la fiabilité des processus métier."
     }
   },
   actions: {

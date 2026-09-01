@@ -16,15 +16,15 @@ export default {
   offerings: {
     architecture: {
       title: 'Scalable Architecture',
-      description: 'Architecting backend systems and APIs that hold up under real production load — built to scale with the business, not against it.'
+      description: 'Architecting robust, high-performance backend systems and APIs that withstand demanding production workloads — designed to scale reliably as the business grows.'
     },
     fullstack: {
       title: 'Fullstack Delivery',
-      description: 'End-to-end ownership from Figma prototypes and database migrations to production launch — no hand-offs, no gaps.'
+      description: 'End-to-end ownership across frontend, backend, databases, infrastructure, and deployment — turning designs into production-ready systems with no hand-offs and no gaps.'
     },
     automation: {
       title: 'AI-Driven Automation',
-      description: 'Replacing manual, repetitive workflows with automation and AI agents where they genuinely save time and reduce errors.'
+      description: 'Designing AI-powered workflows and autonomous agents to automate repetitive processes, reduce manual effort, and improve operational accuracy where AI delivers measurable value.'
     }
   },
   actions: {
