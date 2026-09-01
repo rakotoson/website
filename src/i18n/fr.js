@@ -20,7 +20,7 @@ export default {
     },
     fullstack: {
       title: 'Livraison Fullstack',
-      description: 'De la conception à la production, je transforme les besoins métier en solutions concrètes et production-ready — de l\'architecture frontend et backend aux bases de données, à l\'infrastructure et au déploiement. Une maîtrise de bout en bout, pensée pour livrer des systèmes robustes et évolutifs.'
+      description: 'De l\'architecture frontend et backend aux bases de données, à l\'infrastructure et au déploiement. Une maîtrise de bout en bout, pensée pour livrer des systèmes robustes et évolutifs.'
     },
     automation: {
       title: "IA & Automatisation",
