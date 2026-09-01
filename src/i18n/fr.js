@@ -8,8 +8,8 @@ export default {
     blog: 'Blog'
   },
   header: {
-    title: 'Ingénieur Logiciel Senior',
-    bio: "{years}+ ans à concevoir des systèmes qui tiennent la charge — des API de recherche gérant plus de 100 000 requêtes par seconde, des outils pilotés par l'IA à 95 % de précision, et des plateformes utilisées par des milliers d'utilisateurs. Aujourd'hui, j'architecture des solutions fullstack avec Node.js, Vue.js, Angular et NestJS.",
+    title: 'Senior Software Engineer',
+    bio: "Senior Software Engineer avec {years}+ ans d\'expérience dans la conception de systèmes scalables et à fort trafic. API de recherche à 100 000+ requêtes/seconde, solutions IA à 95 % de précision, plateformes utilisées par des milliers d’utilisateurs : je transforme des problématiques complexes en architectures robustes, performantes et évolutives. Expertise principale : Node.js, NestJS, Vue.js et Angular.",
     rate: 'Tarif :',
     rateText: 'à partir de 200€/jour — toujours ouvert à discuter du périmètre et de l\'adéquation.'
   },
