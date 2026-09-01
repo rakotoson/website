@@ -9,7 +9,7 @@ export const skills = {
 export const experience = {
   en: [
     {
-      period: 'September 2019 - Present',
+      period: 'September 2019 - July 2026',
       company: 'Haizaha',
       role: 'Software Engineer & Technical Lead',
       location: 'Madagascar',
@@ -140,7 +140,7 @@ export const experience = {
   ],
   fr: [
     {
-      period: 'Septembre 2019 - Présent',
+      period: 'Septembre 2019 - Juillet 2026',
       company: 'Haizaha',
       role: 'Ingénieur Logiciel & Lead Technique',
       location: 'Madagascar',
