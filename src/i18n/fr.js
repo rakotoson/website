@@ -11,7 +11,7 @@ export default {
     title: 'Ingénieur Logiciel Senior',
     bio: "{years}+ ans à concevoir des systèmes qui tiennent la charge — des API de recherche gérant plus de 100 000 requêtes par seconde, des outils pilotés par l'IA à 95 % de précision, et des plateformes utilisées par des milliers d'utilisateurs. Aujourd'hui, j'architecture des solutions fullstack avec Node.js, Vue.js, Angular et NestJS.",
     rate: 'Tarif :',
-    rateText: 'à partir de 150€/jour — toujours ouvert à discuter du périmètre et de l\'adéquation.'
+    rateText: 'à partir de 200€/jour — toujours ouvert à discuter du périmètre et de l\'adéquation.'
   },
   offerings: {
     architecture: {

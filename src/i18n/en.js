@@ -11,7 +11,7 @@ export default {
     title: 'Senior Software Engineer',
     bio: '{years}+ years building systems that scale — search APIs handling 100,000+ requests per second, AI-driven tooling at 95% accuracy, and platforms serving thousands of users. Currently architecting fullstack solutions across Node.js, Vue.js, Angular, and NestJS.',
     rate: 'Rate:',
-    rateText: 'starting at $150/day — always happy to discuss scope and fit.'
+    rateText: 'starting at $250/day — always happy to discuss scope and fit.'
   },
   offerings: {
     architecture: {
