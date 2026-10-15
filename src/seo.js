@@ -3,7 +3,7 @@
 // browser APIs and '@/' aliases so vite.config.js can import it.
 import { posts } from './data/blog.js';
 
-export const SITE_URL = 'https://website-five-psi-78.vercel.app';
+export const SITE_URL = 'https://avotra-rakotoson.is-a.dev';
 export const SITE_NAME = 'Avotra Niaina Rakotoson';
 export const OG_IMAGE = `${SITE_URL}/og-image.png`;
 
