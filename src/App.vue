@@ -1,10 +1,22 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useRoute } from 'vue-router';
 import NavBar from '@/components/NavBar.vue';
+import { getMeta, getPostMeta } from '@/seo';
+import { applyMeta } from '@/head';
 
 const { locale } = useI18n();
+const route = useRoute();
 watch(locale, (value) => { document.documentElement.lang = value; }, { immediate: true });
+
+watch(
+  [() => route.path, locale],
+  () => {
+    applyMeta(route.name === 'blog-post' ? getPostMeta(route.params.slug, locale.value) : getMeta(route.path));
+  },
+  { immediate: true }
+);
 
 const isDark = ref(true);
 

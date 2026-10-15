@@ -71,6 +71,9 @@ export default {
   language: {
     switchTo: 'Switch to English'
   },
+  notFound: {
+    message: "Cette page n'existe pas."
+  },
   blog: {
     heading: 'Blog',
     intro: "Articles de fond sur l'architecture système, les outils pilotés par l'IA, et les leçons tirées de la mise en production de logiciels.",

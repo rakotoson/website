@@ -71,6 +71,9 @@ export default {
   language: {
     switchTo: 'Passer en français'
   },
+  notFound: {
+    message: "This page doesn't exist."
+  },
   blog: {
     heading: 'Blog',
     intro: 'Long-form writing on system architecture, AI-driven tooling, and lessons from shipping production software.',

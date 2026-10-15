@@ -5,6 +5,7 @@ export const posts = {
       title: 'Building Repr.dev: Turning Git History Into a Real Signal of Contribution',
       excerpt: 'Why raw commit counts are a bad proxy for impact, and how Repr.dev scores developer contributions from Git history with 95% analysis accuracy.',
       date: 'February 2025',
+      datePublished: '2025-02-01',
       readTime: '6 min read',
       tags: ['AI', 'Git', 'Python'],
       blocks: [
@@ -55,6 +56,7 @@ export const posts = {
       title: 'Scaling a Search Engine API: Worker Threads, Round-Robin Balancing, and SHA1 Fingerprinting',
       excerpt: 'How a Node.js search API built for Pertimm handled 100,000+ requests per second — Worker Threads, round-robin balancing, and SHA1 fingerprinting working together.',
       date: 'September 2024',
+      datePublished: '2024-09-01',
       readTime: '7 min read',
       tags: ['Node.js', 'Worker Threads', 'Performance'],
       blocks: [
@@ -114,6 +116,7 @@ export const posts = {
       title: 'Docker and CI/CD: The Boring Infrastructure That Makes Shipping Fast',
       excerpt: 'Why Docker and CI/CD are the first things I set up on every project, and how restructuring a GitLab pipeline cut deployment times by 30%.',
       date: 'June 2021',
+      datePublished: '2021-06-01',
       readTime: '6 min read',
       tags: ['Docker', 'CI/CD', 'DevOps'],
       blocks: [
@@ -167,6 +170,7 @@ export const posts = {
       title: "Construire Repr.dev : transformer l'historique Git en un vrai signal de contribution",
       excerpt: "Pourquoi le simple compte de commits est un mauvais indicateur d'impact, et comment Repr.dev évalue les contributions des développeurs à partir de l'historique Git avec 95 % de précision d'analyse.",
       date: 'Février 2025',
+      datePublished: '2025-02-01',
       readTime: '6 min de lecture',
       tags: ['IA', 'Git', 'Python'],
       blocks: [
@@ -217,6 +221,7 @@ export const posts = {
       title: "Faire évoluer une API de moteur de recherche : Worker Threads, équilibrage round-robin et empreintes SHA1",
       excerpt: "Comment une API de recherche Node.js construite pour Pertimm a tenu plus de 100 000 requêtes par seconde — Worker Threads, équilibrage round-robin et empreintes SHA1 combinés.",
       date: 'Septembre 2024',
+      datePublished: '2024-09-01',
       readTime: '7 min de lecture',
       tags: ['Node.js', 'Worker Threads', 'Performance'],
       blocks: [
@@ -276,6 +281,7 @@ export const posts = {
       title: "Docker et CI/CD : l'infrastructure ennuyeuse qui permet de livrer vite",
       excerpt: "Pourquoi Docker et CI/CD sont les premières choses que je mets en place sur chaque projet, et comment la restructuration d'un pipeline GitLab a réduit les temps de déploiement de 30 %.",
       date: 'Juin 2021',
+      datePublished: '2021-06-01',
       readTime: '6 min de lecture',
       tags: ['Docker', 'CI/CD', 'DevOps'],
       blocks: [
